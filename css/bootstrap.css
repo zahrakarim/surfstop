@@ -2804,9 +2804,9 @@ fieldset[disabled] .btn-default.active {
   background-color: #333333;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+color: black;
+background-color: transparent;
+border-color: #357ebd;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3047,6 +3047,7 @@ fieldset[disabled] .btn-link:focus {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
+
 }
 .btn-sm,
 .btn-group-sm > .btn {
