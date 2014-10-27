@@ -90,6 +90,98 @@ body{
       font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     }
 
+
+
+    .panel
+{
+    position: relative;
+}
+
+.panel-default > .panel-leftheading
+{
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.panel-primary > .panel-leftheading
+{
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.panel-success > .panel-leftheading
+{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.panel-info > .panel-leftheading
+{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.panel-warning > .panel-leftheading
+{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.panel-danger > .panel-leftheading
+{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.panel-leftheading
+{
+    width: 42px;
+    padding: 10px 15px;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    float: left;
+    height: 100%;
+    position: absolute;
+}
+
+.panel-lefttitle
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 16px;
+    color: inherit;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(90deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(90deg);
+    -o-transform-origin: left top;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.panel-rightbody
+{
+    float: left;
+    margin-left: 45px;
+    padding: 15px;
+}
+
+
     </style>
 
 
@@ -102,29 +194,62 @@ body{
 
       </div>
     </div>
-
-
-    
-  
-       
-          <h2>The Basics</h2>
-          <center><p>&raquo; Respect the environment. Surfers are often considered ocean ambassadors and should promote the health of our beaches and ocean. We depend on a clean and healthy ocean, so always properly dispose of any trash you encounter on the beach! <br> &raquo; Maintain a positive attitude! Surfing should be fun for you and everyone else in the line up. <br>&raquo; Respect others and share waves.</p></center>
-
-     
-      
-          <h2>General Safety</h2>
-          <p>&raquo; Follow the local laws at the beach you visit. <br> &raquo; Wear a leash. Not only is it a law at many beaches, but wearing a leash is an important way to keep your board close to you and to keep it from becoming a hazard to other surfers. <br> &raquo; Always aid a fellow surfer or swimmer if he/she encounters trouble in the water. The ocean is a dynamic environment and there are many safety hazards including rip currents. Should another surfer or swimmer encounter a problem, immediately offer assistance.<br> &raquo; Everyone who surfs should be certified in CPR and Basic First Aid.<br> &raquo; Never surf in conditions above your ability level, if you are uncomfortable your will have a great risk of injury <br> &raquo; If in doubt, ask a life guard, they are there to help and are our friends!</p>
+<center>
 
     
+  <div class="container">
+   
+    <div class="row">
+      <div class="col-md-6">
         
-          <h2>Surfing Saftey</h2>
-          <p>&raquo; If you are a beginner, avoid surfing in crowed areas while you are learning. <br>
+<div class="panel panel-primary">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">THE BASICS</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>&raquo; Respect the environment. Surfers are often considered ocean ambassadors and should promote the health of our beaches and ocean. We depend on a clean and healthy ocean, so always properly dispose of any trash you encounter on the beach! <br> &raquo; Maintain a positive attitude! Surfing should be fun for you and everyone else in the line up. <br>&raquo; Respect others and share waves.</p>
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">GENERAL SAFETY</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>&raquo; Follow the local laws at the beach you visit. <br> &raquo; Wear a leash. Not only is it a law at many beaches, but wearing a leash is an important way to keep your board close to you and to keep it from becoming a hazard to other surfers. <br> &raquo; Always aid a fellow surfer or swimmer if he/she encounters trouble in the water. The ocean is a dynamic environment and there are many safety hazards including rip currents. Should another surfer or swimmer encounter a problem, immediately offer assistance.<br> &raquo; Everyone who surfs should be certified in CPR and Basic First Aid.<br> &raquo; Never surf in conditions above your ability level, if you are uncomfortable your will have a great risk of injury <br> &raquo; If in doubt, ask a life guard, they are there to help and are our friends!</p>
+      
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">SURFING SAFETY</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>&raquo; If you are a beginner, avoid surfing in crowed areas while you are learning. <br>
           Avoid paddling directly into the area where the waves are breaking (the impact zone). This is important for several reasons. First, if you choose to paddle out in a channel or in a rip current, you will spend less energy. Second, you will less likely encounter a surfer riding the face of a wave. <br>
           &raquo; When paddling out, be aware that a surfer actively riding a wave has the right of way. As a paddler, it is your obligation to avoid a surfer on a wave. <br>
           &raquo; When two surfers paddle for the same wave, the surfer closer to the peak has the “right of way”.
           Do not snake! A snake is someone who aggressively positions him/herself in front of another surfer who otherwise would be in position to catch the wave. Remember to always respect other more experienced surfers and share waves. <br>
           &raquo; Call out “left” or “right” to designate which way you will turn as you drop in. This is especially important when two surfers positioned close together near the peak of the wave.</p>
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+    </div>
+    <img src="img/lifeguard.jpg" height="600">
+</center>
 
+     
+      
+       
+
+    
+  
 
 
   <hr class="featurette-divider">
