@@ -1,0 +1,72 @@
+/*
+	sliceBoxFlickr written by Sean Clark, Square Bracket LLC
+	http://square-bracket.com @optikalefx
+	
+	SliceBox written by Pedro Botelho
+	http://tympanus.net/ @o_telho
+
+*/
+
+body{
+	background:#428bca;
+	color:#000;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-size:12px;
+	min-height:800px;
+}
+
+h1{
+	margin:5%;
+/*	font-size:20px;*/
+	/*color:#fff;*/
+	/*font-family: 'Volkhov', sans-serif;*/
+	font-family: 'Amatic SC', cursive;
+	color:orange;
+	font-size: 4.5em;
+	letter-spacing: 10.5px;
+	line-height: 10%;
+	text-align:center;
+	font-weight:700;
+	text-shadow:1px 1px 3px #333;
+}
+h2{
+	margin:2% 2%;
+/*	font-size:20px;*/
+	/*color:#fff;*/
+	/*font-family: 'Volkhov', sans-serif;*/
+	font-family: 'Amatic SC', cursive;
+	color:orange;
+	font-size: 3.5em;
+	letter-spacing: 10.5px;
+	line-height: 10%;
+	text-align:center;
+	font-weight:700;
+	text-shadow:1px 1px 3px #333;
+}
+
+p{
+	margin:2% 7%;
+	font-family: 'Amatic SC', cursive;
+	color:orange;
+	font-size: 2.5em;
+	/*letter-spacing: 10.5px;*/
+	font-weight:700;
+}
+
+/* we overwrite the hidden images so we can show our fake image */
+.sb-slider img {
+	display: block;
+	margin:auto;
+}
+/* we add a new class to differentiate the loaded in images vs the the fake one */
+.sb-slider img.loaded {
+	display:none;
+}
+/* we don't want the shadow on a black background */
+.sb-shadow {
+	background:none;
+}
+/* instead of the png shadow, we make a webkit box reflection */
+.sb-slider > div:first-child {
+	  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.2)));
+}
