@@ -1,19 +1,66 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/icon.svg">
+
+
 	<title>SURF </title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+	
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 	<link href='http://fonts.googleapis.com/css?family=Trade+Winds|Indie+Flower|Pacifico|Amatic+SC|Faster+One' rel='stylesheet' type='text/css'>
+
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
+
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+      <a class="navmenu-brand" href="index.html">Surfstop</a>
+      <ul class="nav navmenu-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="talk.html">Lingo</a></li>
+        <li><a href="safe.html">Safety</a></li>
+        <li><a href="temp.html">Almost Ready</a></li>
+        <li><a href="locations.html">Weather Map</a></li>
+      </ul>
+      <ul class="nav navmenu-nav">
+  
+       
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Florida Beaches <b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="newsymrna.html">New Smyrna</a></li> <!--We could just do one-->
+            <li><a href="sebastian.html">Sebastian Inlet</a></li>
+            <li><a href="satellite.html">Satellite</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/nav menu-->
+ 
+    <div class="navbar navbar-default navbar-fixed-top">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+          <i class="fa fa-bars fa-3x"></i>
+          </button>
+    </div>
+
+
+
 	<div class="grid_12">
 		<!-- <h1 class="topper">Where to surf</h1> -->
 		<div id="progressbar"></div>
-		<h1> locate surf spots </h1>
+		<h1> Surf Spots & Weather </h1>
 
 	</div>
 
@@ -69,6 +116,9 @@
 		<a href="#" id="submit"> get tweets</a>
 	</div> -->
 	<!-- tweets/////////////javascript:;///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
 	<div id="copyright" class="grid_12">
 		<img src="img/sunny.png" alt="sunny" width="80px" height="80px"><p>©All Rights Reserved.</p>
 	</div>
@@ -87,41 +137,37 @@ $("#hide").click(function(){
 	$("address").hide();
 });
 </script>
-<!-- Js for tweets ////////////////////////////////////
-	//////////////////////////////////////////////////////////////-->
-<!--<script type="text/javascript">
-// 	$(document).ready(function(){
-// 		console.log('Doc ready!');
-// 		$('#submit').click (function(){
 
-// 			var search_term = {
-// 				q:'surfing'
-// 			};
-// 			search(search_term);
-// 		});
-// 	});
+	<center>
+      <!-- FOOTER -->
+      <div id="footer">
+        <div class="container-fluid footer-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+            <ul class="footer-ul center-content">
+              <li class="inline"><a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-3x"></i></a></li> 
+              <li class="inline"><a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-3x"></i></a></li> 
+              <li class="inline"><a href="http://www.instagram.com"><i class="fa fa-instagram fa-3x"></i></a></li> 
+            </ul>    
+          </div> 
+        </div>
+        </div>  
+      </div>
+  </center>
 
-// 	function search(search_term) {
-// 		console.log('searching for');
-// 		console.dir(search_term);
-// 		$.ajax({
-// 			url: 'http://search.twitter.com/search.json?' + $.param(search_term),
-// 			dataType:'jsonp',
-// 			success: function(data){
-// 				console.dir(data);
 
-// 				for (item in data ['results']){
-// 					$('#tweets').append(
-// 						'<li>' + data['results'][item]['item']+ '</li>');
-// 				}
-// 			}
-// 		});
-// 	}
-// </script> -->
-<!-- // Js for tweets end ////////////////////////////////////
-	//////////////////////////////////////////////////////////////-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
 
-	<!-- OLD KEY= key=AIzaSyCZflzqhYx03gNeLsGLsATVbJqklONyQBU -->
+    <!-- modernizer required for slicebox :/ -->
+    <script type="text/javascript" src="modernizer.js"></script>
+    <script type="text/javascript" src="slicebox.js"></script>
+    <script type="text/javascript" src="easing.js"></script>
+    <script type="text/javascript" src="sliceBoxFlickr.js"></script>
 
 </body>
 </html>
