@@ -20,12 +20,12 @@ ul {
 	list-style-type: none;
 }
 
-h1,h2,h3,h4,h4,h5,h6{
-    font-family: 'Montserrat', sans-serif;
+h1,h2,h3,h4, h5,h6{
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -60,6 +60,12 @@ a:hover{
 
 
 }
+
+section{
+  padding: 30px 70px 30px 70px;
+}
+
+
 
 
 
@@ -211,6 +217,14 @@ a:hover{
 }
 
 /* HOME PAGE -------------------------------------------------------------------------------------*/
+.marketing{
+  padding: 70px 30px 70px 30px;
+
+}
+
+p.home-text{
+  font-size: 18px !important;
+}
 
 h1.main-text{
   font-family: 'Amatic', sans-serif;
@@ -222,12 +236,12 @@ h1.main-text{
 }
 
 h2.sub{
+  margin-top:0;
   font-size: 2em !important;
 }
 
 #home{
   background-color: #f4f4f4;
-  padding: 100px 100px !important;
   z-index: -10;
   margin-top:600px; 
 }
@@ -267,7 +281,7 @@ h2.sub{
 
 .thumbnail{
   height: 450px;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   border: 0px solid #000000;
 }
 
@@ -529,12 +543,7 @@ h2.sub{
 
 @media (max-width: 767px) {
   html { 
-    background-color: #464646 no-repeat center center fixed; 
-    background-image: url(../img/header.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+   
   
   }
 
@@ -548,7 +557,6 @@ h2.sub{
 
 
   .thumbnail{
-    width:500px;
     height: 400px;
   }
 
