@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-
+    <link rel="icon" href="img/icon.svg">
+   
     <title>Surfstop || Your #1 Stop For All Things Surf!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -30,20 +26,14 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-    <style type="">
-body { 
-  background: url(img/map.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-    </style>
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
-
+<!-- NAVBAR
+================================================== -->
   <body>
- <body>
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -67,7 +57,7 @@ body {
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Interact! <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Beach 1</a></li>
+                    <li><a href="map.html">Beach 1</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Beach 2</a></li>
                     <li class="divider"></li>
@@ -81,24 +71,118 @@ body {
 
       </div>
     </div>
+    <style type="text/css">
+    h1{
+     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+     color: black;
+     font-size: 48px;
+     text-align: right;
+    }
+     h2{
+     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+     color: black;
+     font-size: 30px;
+     text-align: center;
+    }
+    p{
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+      color: black;
+      text-align: right;
+    }
+    body{
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    }
 
-          <div class="inner cover">
-    
-            
-  
-            </p>
+
+    </style>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="fill" style="background-image:url('img/image1.jpg');"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Surf's Up.</h1>
+              <p>No more searching, googling, or bookmarking. <br>One stop on one page for all the surfing information you need.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
           </div>
-
-        
-
         </div>
-
+        <div class="item">
+           <div class="fill" style="background-image:url('img/image2.jpg');"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Gnarly.</h1>
+              <p>The waves are firin' so don't waste any time, get all the info and get out there!</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('img/image3.jpg');"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Have a swell time.</h1>
+              <p>Bringing you the information that you need to have the best surf, everytime.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
       </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></i></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
-    </div>
- 
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/hand.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Learn the Lingo.</h2>
+          <p>Are you a new surfer? Need to brush up on your surfing terms and history? We've got you covered. We have all of the most gnarly and hip surfing information.</p>
+         <p><a class="btn btn-lg btn-primary" href="talk.html" role="button">View Information &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/whistle.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Safety First.</h2>
+          <p>Surfing is all about catching the waves and having a great time but before that you have to make sure you know all the safety precautions you should be taking.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">View Safety &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/splash.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Hot and Cold.</h2>
+          <p>Temperatures outside might be hot but the water might still be cold. View our information on what ideal surfing water temperatures and weather are.</p>
+                   <p><a class="btn btn-lg btn-primary" href="#" role="button">View Weather Info &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <hr class="featurette-divider">
+
+
+      <!-- FOOTER --><center>
+      <footer>
+        <a href="http://www.facebook.com"><img src="img/facebook.svg" width="50"></a> &nbsp; &nbsp; 
+        <a href="http://www.twitter.com"><img src="img/twitter.svg" width="50"> </a> &nbsp; &nbsp; 
+        <a href="http://www.instagram.com"><img src="img/instagram.svg" width="50"></a>
+      </footer>
+</center>
     </div><!-- /.container -->
-      
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
