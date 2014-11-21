@@ -5,7 +5,6 @@
 	border: 10px solid #ffa500;
 }
 body {
-	font-family: 'Nunito', sans-serif;
 	font-weight: normal;
 	font-size: 1.55em;
 /*	background-image:url(../img/fish2.jpg);
@@ -28,7 +27,7 @@ a {
 
 /*typography*/
 
-h1 {
+/*h1 {
 	font-size: 4.5em;
 	font-weight:900;
 	letter-spacing: 10.5px;
@@ -39,7 +38,7 @@ h1 {
 	/*font-family: 'Trade Winds', cursive;*/
 	/*font-family: 'Pacifico', cursive;*/
 	/*font-family: 'Indie Flower', cursive;*/
-	font-family: 'Amatic SC', cursive;
+	/*font-family: 'Amatic SC', cursive;*/
 /*	font-family: 'Faster One', cursive;*/
 
 }
@@ -149,22 +148,6 @@ background-color: orange;}
 	margin: 0 0 0 0;
 	border: 1px solid orange;
 	/*border-radius: 250px;*/
-}
-h1 {
-	font-size: 1.5em;
-	font-weight:900;
-	font-weight:bold;
-	letter-spacing: 7.5px;
-	line-height: 10%;
-	color:orange;
-	font:orange;
-	text-align: center;
-	/*font-family: 'Trade Winds', cursive;*/
-	/*font-family: 'Pacifico', cursive;*/
-	/*font-family: 'Indie Flower', cursive;*/
-	font-family: 'Amatic SC', cursive;
-/*	font-family: 'Faster One', cursive;*/
-
 }
 }
 

@@ -9,10 +9,11 @@
     <link rel="icon" href="img/icon.svg">
 
 
-	<title>SURF </title>
+    <title>Surfstop || Your #1 Stop For All Things Surf!</title>
+
 	
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-	<link href='http://fonts.googleapis.com/css?family=Trade+Winds|Indie+Flower|Pacifico|Amatic+SC|Faster+One' rel='stylesheet' type='text/css'>
+
 
 
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
@@ -25,15 +26,17 @@
 </head>
 
 <body>
+    <div id="pattern"></div>
+
 
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
       <a class="navmenu-brand" href="index.html">Surfstop</a>
       <ul class="nav navmenu-nav">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="talk.html">Lingo</a></li>
         <li><a href="safe.html">Safety</a></li>
         <li><a href="temp.html">Almost Ready</a></li>
-        <li><a href="locations.html">Weather Map</a></li>
+        <li class="active"><a href="locations.html">Weather Map</a></li>
       </ul>
       <ul class="nav navmenu-nav">
   
@@ -55,15 +58,18 @@
           </button>
     </div>
 
-
+<section id="mapm">
+      <div class="container">
+      <h1 class="beach-title text-center">Surf Spots & Weather</h1>
+</div>
+</section>
 
 	<div class="grid_12">
 		<!-- <h1 class="topper">Where to surf</h1> -->
 		<div id="progressbar"></div>
-		<h1> Surf Spots & Weather </h1>
 
 	</div>
-
+</div>
 
 	<div id="locations" class="grid_12">
 
@@ -73,7 +79,7 @@
 			</p>
 				<address>
 					6656 South Atlantic Avenue, New Smyrna Beach, FL 32169
-					<div style="height:400px;width:400px;background:#fff"><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1414700327_90964"></script><p><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Bethune-Surf-Report/3771/" style="color:#000;">Bethune Surf Report and Forecast</a></div></p></div>
+					<div style="height:400px;width:400px;background:#fff"><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1414700327_90964"></script><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Bethune-Surf-Report/3771/" style="color:#000;"><p>Bethune Surf Report and Forecast</p></a></div></div>
 				</address>
 		</div>
 		<br>
@@ -83,7 +89,7 @@
 			</p>
 				<address>
 					1246 Florida A1A, Satellite Beach, FL 32937
-					<div style="height:400px;width:400px;background:#fff"><!-- height:400px old height --><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1414780358_83472"></script><p><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Satellite-Beach-Surf-Report/548/" style="color:#000;">Satellite Beach Surf Report and Forecast</a></div></p></div>
+					<div style="height:400px;width:400px;background:#fff"><!-- height:400px old height --><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1414780358_83472"></script><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Satellite-Beach-Surf-Report/548/" style="color:#000;"><p>Satellite Beach Surf Report and Forecast</p></a></div></div>
 				</address>
 		</div>
 		<br>
@@ -93,7 +99,7 @@
 			</p>
 				<address>
 					Sebastian Inlet, Florida 32963
-					<div style="height:400px;width:400px;background:#fff"><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1415221063_12680"></script><p><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Sebastian-Inlet-Surf-Report/352/" style="color:#000;">Sebastian Inlet Surf Report and Forecast</a></div></p></div>
+					<div style="height:400px;width:400px;background:#fff"><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1415221063_12680"></script><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Sebastian-Inlet-Surf-Report/352/" style="color:#000;"><p>Sebastian Inlet Surf Report and Forecast</p></a></div></div>
 				</address>
 		</div>
 <!-- 		<div class="grid_6 charlie">
@@ -119,11 +125,10 @@
 
 
 
-	<div id="copyright" class="grid_12">
+	<!--<div id="copyright" class="grid_12">
 		<img src="img/sunny.png" alt="sunny" width="80px" height="80px"><p>©All Rights Reserved.</p>
-	</div>
-</div>
-</div>
+	</div>--> 
+
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
   $(function() {
@@ -138,7 +143,7 @@ $("#hide").click(function(){
 });
 </script>
 
-	<center>
+
       <!-- FOOTER -->
       <div id="footer">
         <div class="container-fluid footer-wrapper">
@@ -153,7 +158,6 @@ $("#hide").click(function(){
         </div>
         </div>  
       </div>
-  </center>
 
 
     <!-- Bootstrap core JavaScript

@@ -406,7 +406,9 @@ h2.sub{
 
 /* Beach Pages ---------------------------------------------------------------------------------*/
 
-
+#mapm{
+  margin-top: 40px;
+}
 
 /* Footer -------------------------------------------------------------------------------------*/
 
@@ -549,14 +551,14 @@ h2.sub{
   }
 
     .tagline{
-    font-size: 10px;
+    font-size: 15px;
   }
   .fa-3x{
     font-size: 2em !important;
   }
 
   .thumbnail{
-    height: 400px;
+    height: 450px;
   }
 
   #home{
