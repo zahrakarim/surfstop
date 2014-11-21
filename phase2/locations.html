@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>SURF </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<link href='http://fonts.googleapis.com/css?family=Trade+Winds|Indie+Flower|Pacifico|Amatic+SC|Faster+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="grid_12">
+		<!-- <h1 class="topper">Where to surf</h1> -->
+		<div id="progressbar"></div>
+		<h1> locate surf spots </h1>
+
+	</div>
+
+
+	<div id="locations" class="grid_12">
+
+		<div class="grid_6">
+			<p class="static_map">
+				<img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDCpC9RdS9H7jO2p-lLaiQ2h860CzxGXrw&size=400x300&sensor=false&markers=6656+South+Atlantic+Avenue+New+Smyrna+Beach,+FL+32169" alt="C6656 South Atlantic Avenue <br>New Smyrna Beach, FL 32169">
+			</p>
+				<address>
+					6656 South Atlantic Avenue, New Smyrna Beach, FL 32169
+					<div style="height:200px;width:400px;background:#fff"><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1414700327_90964"></script><p><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Bethune-Surf-Report/3771/" style="color:#000;">Bethune Surf Report and Forecast</a></div></p></div>
+				</address>
+		</div>
+		<br>
+		<div class="grid_6 omega">
+			<p class="static_map">
+				<img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDCpC9RdS9H7jO2p-lLaiQ2h860CzxGXrw&size=400x300&sensor=false&markers=1246+Florida+A1A,+Satellite+Beach,+FL+32937" alt="W1246 Florida A1A, Satellite Beach, FL 32937">
+			</p>
+				<address>
+					1246 Florida A1A, Satellite Beach, FL 32937
+					<div style="height:200px;width:400px;background:#fff"><!-- height:400px old height --><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1414780358_83472"></script><p><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Satellite-Beach-Surf-Report/548/" style="color:#000;">Satellite Beach Surf Report and Forecast</a></div></p></div>
+				</address>
+		</div>
+		<br>
+		<div class="grid_6 alpha">
+			<p class="static_map">
+				<img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDCpC9RdS9H7jO2p-lLaiQ2h860CzxGXrw&size=400x300&sensor=false&markers=Sebastian,+Inlet+FL+32963" alt="SebastianInlet">
+			</p>
+				<address>
+					Sebastian Inlet, Florida 32963
+					<div style="height:200px;width:400px;background:#fff"><script type="text/javascript" src="http://magicseaweed.com/syndicate/index.php?licenseKey=1415221063_12680"></script><p><div style="font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:10px;color:#000;height:25px;"><a href="http://magicseaweed.com/Sebastian-Inlet-Surf-Report/352/" style="color:#000;">Sebastian Inlet Surf Report and Forecast</a></div></p></div>
+				</address>
+		</div>
+<!-- 		<div class="grid_6 charlie">
+			<p class="static_map">
+				<img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDCpC9RdS9H7jO2p-lLaiQ2h860CzxGXrw&size=400x300&sensor=false&markers=Blue+Spring+State+Park+2100+W+French+Ave+Orange+City,+FL+32713" alt="Blue Spring State Park 2100 W French Ave Orange City, FL 32713">
+			</p>
+			<address>
+				Blue Spring State Park 2100 W French Ave <br> Orange City, FL 32713
+				<p>St johns River access</p>
+			</address>
+		</div> -->
+	</div>
+<!-- 		<div id="surf">
+	<img src="img/surf.jpg">
+</div> -->
+<!-- 			<div id="tweet"> -->
+<!-- tweets////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- 		<h2>tweets</h2>
+		<ol id="tweets"></ol>
+		<a href="#" id="submit"> get tweets</a>
+	</div> -->
+	<!-- tweets/////////////javascript:;///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<div id="copyright" class="grid_12">
+		<img src="img/sunny.png" alt="sunny" width="80px" height="80px"><p>©All Rights Reserved.</p>
+	</div>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $( "#progressbar" ).progressbar({
+      value: 37
+    });
+  });
+$("#locations").prepend('<iframe id="map" src="map.html" scrolling="no"></iframe>');
+$(".static_map").remove();
+$("#hide").click(function(){
+	$("address").hide();
+});
+</script>
+<!-- Js for tweets ////////////////////////////////////
+	//////////////////////////////////////////////////////////////-->
+<!--<script type="text/javascript">
+// 	$(document).ready(function(){
+// 		console.log('Doc ready!');
+// 		$('#submit').click (function(){
+
+// 			var search_term = {
+// 				q:'surfing'
+// 			};
+// 			search(search_term);
+// 		});
+// 	});
+
+// 	function search(search_term) {
+// 		console.log('searching for');
+// 		console.dir(search_term);
+// 		$.ajax({
+// 			url: 'http://search.twitter.com/search.json?' + $.param(search_term),
+// 			dataType:'jsonp',
+// 			success: function(data){
+// 				console.dir(data);
+
+// 				for (item in data ['results']){
+// 					$('#tweets').append(
+// 						'<li>' + data['results'][item]['item']+ '</li>');
+// 				}
+// 			}
+// 		});
+// 	}
+// </script> -->
+<!-- // Js for tweets end ////////////////////////////////////
+	//////////////////////////////////////////////////////////////-->
+
+	<!-- OLD KEY= key=AIzaSyCZflzqhYx03gNeLsGLsATVbJqklONyQBU -->
+
+</body>
+</html>
