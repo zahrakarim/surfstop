@@ -554,7 +554,9 @@ h2.sub{
     .tagline{
     font-size: 10px;
   }
-
+  .fa-3x{
+    font-size: 2em !important;
+  }
 
   .thumbnail{
     height: 400px;
