@@ -15,7 +15,9 @@ body {
 
 a {
 	color: #428bca;
-/*	text-decoration: none;*/
+	font-family: sans-serif;
+	text-align: left;
+/*	textdecoration: none;*/
 }
 
 #locations{
