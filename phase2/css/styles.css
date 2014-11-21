@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans: 400,600,700|Montserrat:400,700);
 
 body {
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -20,11 +20,14 @@ ul {
 	list-style-type: none;
 }
 
+h1,h2,h3,h4,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
 h2 {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.5;
-  font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -41,7 +44,7 @@ img{
 
 
 a{
-  color: #F18D02 !important;
+  /*color: #F18D02 !important;*/
   -webkit-transition: color 0.3s ease-out;
   -moz-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
@@ -92,6 +95,7 @@ a:hover{
 
 
 }
+
 
 .navbar {
    background-color: transparent;
@@ -544,7 +548,7 @@ h2.sub{
 
 
   .thumbnail{
-    width: 100%;
+    width:500px;
     height: 400px;
   }
 
@@ -563,9 +567,7 @@ h2.sub{
     font-size: 14px;
   }
 
-  .tagline{
-    font-size: 18px;
-  } 
+
   .marketing{
     margin-top: 20px;
   }
