@@ -65,64 +65,25 @@
     <!---END OF HEADER-->
 
 
-  
-    <div id="header" class="container-fluid">
-        <video autoplay  poster="#" id="bgvid" loop>
-          <source src="//kristenbasco.com/surfstop/video/bg.webm" type="video/webm">
-          <source src="videos/surf.mp4" type="video/mp4">
-        </video><!--/Video-->
-    </div><!--/Header-->
 
 
-      <div class="col-md-12">
-          <section id="video" class="center">
-             <!--<h1 class="splash-head">A launching point for emerging artists.</h1>-->
-             <h1 class="main-text orange text-center">We are surf experts.</h1>
-             <p class="tagline uppercase semi-bold text-center">We have everything you need to know.</p>
-             <div class="center"></div>
-          </section>
+		<div class="container">
+			<h1>Satellite</h1>
+			
+			<!-- main guy -->
+			<div id="sb-slider" class="sb-slider">
+				<!-- first image as a fake loader -->
+				<img src="http://static.guim.co.uk/sys-images/Travel/Pix/pictures/2013/10/30/1383152814255/Surfing-Kamchatka-Russia-008.jpg"/>
+			</div>
+			<h2>About:</h2>
+				<p> Satellite Beach consists of broken coquina shelf and sand. One of these reefs can produce long, well-defined and hollow lefts when a decent groundswell hits. RCs, on the north corner of the Ramada Inn, is the locals' favorite and has been ridden up to 20ft (faces). Takes all swells but prefers a N/NE at mid tide. There are other reefs up and down the beach, but RCs has the goods. Only the most experienced surfers can get out when it's really big because there is so much water moving.
+				Shallow, rocky, big rips, and locals, plus a complete lack of parking in the immediate vicinity. There are a few clandestine parking spots, but you'll need inside information and a bit of luck to avoid being towed.-Magicseaweed
+				</p>
+		</div>
 
-      </div>
-    
-  
-<section id="home">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-             <img class="center front-img" src="img/hand.svg" alt="Generic placeholder image">
-            <div class="caption">
-              <h2 class="sub text-center">Learn the Lingo</h2>
-              <p>Are you a new surfer? Need to brush up on your surfing terms and history? We've got you covered. We have all of the most gnarly and hip surfing information.</p>
-              <a href="#" class="btn btn-primary" role="button">View Information &raquo;</a> 
-            </div>
-          </div>
-        </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-             <img class="center front-img" src="img/whistle.png" alt="Generic placeholder image">
-            <div class="caption">
-              <h2 class="sub text-center">Safety First.</h2>
-                <p>Surfing is all about catching the waves and having a great time but before that you have to make sure you know all the safety precautions you should be taking.</p>
-                <a href="#" class="btn btn-primary" role="button">View Safety &raquo;</a> 
-            </div>
-          </div>
-        </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img class="center front-img" src="img/splash.svg" alt="Generic placeholder image">
-            <div class="caption">
-              <h2 class="sub text-center">Hot and Cold.</h2>
-                 <p>Temperatures outside might be hot but the water might still be cold. View our information on what ideal surfing water temperatures and weather are.</p>
-                 <a href="#" class="btn btn-primary" role="button">View Weather Info &raquo;</a> 
-            </div>
-          </div>
-        </div>
-      </div><!--/row-->
-    </div><!--/marketing-->
-</section>
+
 
 
 
@@ -154,6 +115,21 @@
     <script type="text/javascript" src="slicebox.js"></script>
     <script type="text/javascript" src="easing.js"></script>
     <script type="text/javascript" src="sliceBoxFlickr.js"></script>
+    
+		<script type="text/javascript">
+			$(function() {
+				
+				// main js call
+				$("#sb-slider").sliceBoxFlickr({
+					// rss : "http://api.flickr.com/services/feeds/photos_public.gne?id=67736566@N04&lang=en-us&format=rss_200"
+					rss : "https://api.flickr.com/services/feeds/photos_public.gne?tags=Satellite beach,surf&tagmode=all"
+				});
+
+			});
+		</script>
+
+
+
 
 
   </body>

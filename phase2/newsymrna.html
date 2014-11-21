@@ -64,69 +64,27 @@
 
     <!---END OF HEADER-->
 
+		<div class="container">
+			<h1>New Smyrna</h1>
+			
+			<!-- main guy -->
+			<div id="sb-slider" class="sb-slider">
+				<!-- first image as a fake loader -->
+				<img src="http://static.guim.co.uk/sys-images/Travel/Pix/pictures/2013/10/30/1383152814255/Surfing-Kamchatka-Russia-008.jpg"/>
+			</div>
+			<h2>About:</h2>
+				<p> Surfers travel for miles to surf this super consistent area. A short jetty juts out at the north end of New Smyrna Beach, protecting the southern side of Ponce de Leon Inlet. As a result, the long stretch of beach south of the jetty has good sandbars, which spreads the usually heavy crowds around. An outside bar called Shark Shallows provides quality waves in most swell conditions, which always seem a couple of feet bigger than nearby areas. These outside bars take the sting out of the swell at low tide so higher tides are usually better. Very occasionally, rights peel down the north side of the jetty into the estuary looking like long, fast, point-style waves.
 
-  
-    <div id="header" class="container-fluid">
-        <video autoplay  poster="#" id="bgvid" loop>
-          <source src="//kristenbasco.com/surfstop/video/bg.webm" type="video/webm">
-          <source src="videos/surf.mp4" type="video/mp4">
-        </video><!--/Video-->
-    </div><!--/Header-->
-
-
-      <div class="col-md-12">
-          <section id="video" class="center">
-             <!--<h1 class="splash-head">A launching point for emerging artists.</h1>-->
-             <h1 class="main-text orange text-center">We are surf experts.</h1>
-             <p class="tagline uppercase semi-bold text-center">We have everything you need to know.</p>
-             <div class="center"></div>
-          </section>
-
-      </div>
-    
-  
-<section id="home">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-             <img class="center front-img" src="img/hand.svg" alt="Generic placeholder image">
-            <div class="caption">
-              <h2 class="sub text-center">Learn the Lingo</h2>
-              <p>Are you a new surfer? Need to brush up on your surfing terms and history? We've got you covered. We have all of the most gnarly and hip surfing information.</p>
-              <a href="#" class="btn btn-primary" role="button">View Information &raquo;</a> 
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-             <img class="center front-img" src="img/whistle.png" alt="Generic placeholder image">
-            <div class="caption">
-              <h2 class="sub text-center">Safety First.</h2>
-                <p>Surfing is all about catching the waves and having a great time but before that you have to make sure you know all the safety precautions you should be taking.</p>
-                <a href="#" class="btn btn-primary" role="button">View Safety &raquo;</a> 
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img class="center front-img" src="img/splash.svg" alt="Generic placeholder image">
-            <div class="caption">
-              <h2 class="sub text-center">Hot and Cold.</h2>
-                 <p>Temperatures outside might be hot but the water might still be cold. View our information on what ideal surfing water temperatures and weather are.</p>
-                 <a href="#" class="btn btn-primary" role="button">View Weather Info &raquo;</a> 
-            </div>
-          </div>
-        </div>
-      </div><!--/row-->
-    </div><!--/marketing-->
-</section>
+				The usual hazards—sharks, man-o-war, and possibly polluted estuary runout. There is motorized traffic in the water and on the beach, which is the best place to park if you don’t want to make the long trek along the boardwalks and through the pristine dune environment from the pay lot. Hectic crowds in the water—from dialed-in locals to clueless tourists.-Magicseaweed
+				</p>
+		</div>
 
 
 
-      <!-- FOOTER -->
+
+
+
+  <!-- FOOTER -->
       <div id="footer">
         <div class="container-fluid footer-wrapper">
           <div class="row">
@@ -154,7 +112,19 @@
     <script type="text/javascript" src="slicebox.js"></script>
     <script type="text/javascript" src="easing.js"></script>
     <script type="text/javascript" src="sliceBoxFlickr.js"></script>
+    
+		<script type="text/javascript">
+			$(function() {
+				
+				// main js call
+				$("#sb-slider").sliceBoxFlickr({
+					// rss : "http://api.flickr.com/services/feeds/photos_public.gne?id=67736566@N04&lang=en-us&format=rss_200"
+					rss : "https://api.flickr.com/services/feeds/photos_public.gne?tags=New Smyrna,surf&tagmode=all"
+				});
 
+			});
+		</script>
 
   </body>
 </html>
+

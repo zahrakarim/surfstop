@@ -1,6 +1,6 @@
 /*General*/
 
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans: 400,600,700|Montserrat:400,700);
 
 body {
    font-family: 'Josefin Sans', sans-serif;
@@ -21,7 +21,7 @@ ul {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
@@ -30,7 +30,8 @@ h2 {
 p {
   color: #000;
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -41,7 +42,24 @@ img{
 
 a{
   color: #F18D02 !important;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+
+  
+
 }
+
+a:hover{
+  color: #30A6F1 !important;
+  cursor: pointer;
+
+
+}
+
+
+
 /* NAV AND HEADER -------------------------------------------------------------------------------------*/
 
 .fa-bars{
@@ -58,8 +76,9 @@ a{
 
 }
 
-.navbar .navbar-nav>li>a{
-  color: #33A4DC;
+
+ .navmenu-nav>li>a .navbar-default .navbar-offcanvas{
+    color: #444!important;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 500;
   text-transform: uppercase;
@@ -67,6 +86,11 @@ a{
   -moz-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
+
+}
+.navmenu-default .navmenu-nav>li>a:hover, .navbar-default .navbar-offcanvas{
+
+
 }
 
 .navbar {
@@ -193,10 +217,14 @@ h1.main-text{
   letter-spacing: 10.5px;
 }
 
+h2.sub{
+  font-size: 2em !important;
+}
+
 #home{
   background-color: #f4f4f4;
   padding: 100px 100px !important;
-  z-index: 5;
+  z-index: -10;
   margin-top:600px; 
 }
 
@@ -510,6 +538,10 @@ h1.main-text{
     background-color: transparent !important;
   }
 
+    .tagline{
+    font-size: 10px;
+  }
+
 
   .thumbnail{
     width: 100%;
@@ -590,6 +622,8 @@ h1.main-text{
     .arrow{
     display: none;
   }
+
+
 }
 
 @media (max-width: 1199px) and (min-width: 992px){
